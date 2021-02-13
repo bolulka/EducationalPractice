@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attributeGroup name="sportcar_attributes">
+        <xs:attribute name="brend" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="25"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="model" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                 <xs:minLength value="1"/>
+                 <xs:maxLength value="25"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:element name="sportcars">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sportcar" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="power">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="120"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="year">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1950"/>
+                                        <xs:maxInclusive value="2020"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="price">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="10000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                           
+                        </xs:sequence>
+                        <xs:attributeGroup ref="sportcar_attributes"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

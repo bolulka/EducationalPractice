@@ -1,0 +1,33 @@
+<characters>
+	<character name="Dipper" cartoon="Gravityfalls">
+		<year>2012</year>
+		<mainCharacter>main character</mainCharacter>
+		<happyEnd>yes</happyEnd>
+		<rating>9</rating>
+	</character>
+	<character name="Rick" cartoon="Rick and Morty">
+		<year>2013</year>
+		<mainCharacter>main character</mainCharacter>
+		<happyEnd>yes</happyEnd>
+		<rating>7</rating>
+	</character>
+	<character name="Mabel" cartoon="Gravityfalls">
+		<year>2012</year>
+		<mainCharacter>main character</mainCharacter>
+		<happyEnd>yes</happyEnd>
+		<rating>10</rating>
+	</character>
+	<character name="Mufasa" cartoon="The Lion King">
+		<year>1994</year>
+		<mainCharacter>minor character</mainCharacter>
+		<happyEnd>no</happyEnd>
+		<rating>10</rating>
+	</character>
+	<character name="Ariel" cartoon="The Little Mermaid">
+		<year>1989</year>
+		<mainCharacter>main character</mainCharacter>
+		<happyEnd>no</happyEnd>
+		<rating>6</rating>
+	</character>
+	
+</characters>	

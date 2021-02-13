@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attributeGroup name="car_attributes">
+            <xs:attribute name="brend" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+            <xs:attribute name="model" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+    </xs:attributeGroup>
+    <xs:element name="cars">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sportcar" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                        <xs:element name="power">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                             <xs:attribute name="year" use="required">
+                                 <xs:simpleType>
+                                  <xs:restriction base="xs:integer">
+                                     <xs:minInclusive value="1900"/>
+                                     <xs:maxInclusive value="2020"/>
+                                  </xs:restriction>
+                                 </xs:simpleType>
+                               </xs:attribute>
+                            <xs:element name="price">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="10 000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            
+                        </xs:sequence>
+                        <xs:attributeGroup ref="car_attributes"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,31 @@
+<sportcars>	<sportcar brend="CHEVROLET" model="CORVETTE C7">
+		<power>466</power>
+		<year>2014</year>
+		<price>100000</price>
+	</sportcar>
+	<sportcar brend="LAMBORGHINI" model="GALLARDO">
+		<power>500</power>
+		<year>2003</year>
+		<price>315000</price>
+	</sportcar>
+	<sportcar brend="FERRARI" model="458 ITALIA">
+		<power>570</power>
+		<year>2009</year>
+		<price>190261</price>
+	</sportcar>
+	<sportcar brend="BENTLEY" model="CONTINENTAL GT">
+		<power>575</power>
+		<year>2002</year>
+		<price>150000</price>
+	</sportcar>
+	<sportcar brend="MCLAREN" model="MP4-12C">
+		<power>600</power>
+		<year>2009</year>
+		<price>203360</price>
+	</sportcar>
+	<sportcar brend="AUDI" model="R8">
+		<power>1452</power>
+		<year>2001</year>
+		<price>45215</price>
+	</sportcar>
+</sportcars>
