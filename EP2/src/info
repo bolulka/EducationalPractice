@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<appliance>
+    <slad name='Slad' power='250' status='true' usage='7' burners='4'/>
+    <kettle name='Kettle' power='200' status='true' usage='9' capacity='1000'/>
+    <oven name='Microwave' power='245' status='true' usage='5'/>
+    <fridge name='Fridge' power='260' status='false' usage='10' numberOfViews='25'/>
+</appliance>
